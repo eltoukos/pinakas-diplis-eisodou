@@ -1,0 +1,75 @@
+<!doctype html>
+<!--
+Copyright (C) 2018 Alkis Georgopoulos <alkisg@gmail.com>.
+SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Πίνακας διπλής εισόδου (καιρός)</title>
+  <style>
+    /* Dummy style for animations */
+  </style>
+  <link rel="stylesheet" type="text/css" href="activity.css">
+  <script>
+
+  </script>
+  <script src="activity.js"></script>
+</head>
+<body>
+<div id="main">
+  <div id = "inputTable">
+  	<div class="cell" id="i00"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i01"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i02"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i03"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i04"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i10"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i11"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i12"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i13"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i14"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i20"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i21"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i22"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i23"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i24"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i30"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i31"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i32"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i33"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i34"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i40"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i41"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i42"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i43"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i44"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i50"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i51"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i52"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i53"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i54"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i60"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i61"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i62"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i63"><img src="resource/checkmark.svg"/></div>
+    <div class="cell" id="i64"><img src="resource/checkmark.svg"/></div>
+  </div>
+  <div id="barchart">
+  	<svg id="bc" viwebox="0 0 22 21">
+  	</svg>
+  </div>
+
+  <div id="menubar">
+    <img id="bar_home" src="resource/bar_home.svg" alt="Αρχική" title="Επιστροφή στην αρχική σελίδα">
+    <img id="bar_help" src="resource/bar_help.svg" alt="Βοήθεια" title="Βοήθεια">
+    <img id="bar_about" src="resource/bar_about.svg" alt="Περί" title="Περί">
+    <img id="bar_fullscreen" src="resource/bar_fullscreen.svg" alt="Πλήρης οθόνη" title="Πλήρης οθόνη">
+    <img id="bar_reset" src="resource/bar_reset.svg" alt="Επανεκκίνηση" title="Επανεκκίνηση">
+    <img id="bar_graph" src="resource/bar_graph.svg" alt="Ραβδόγραμμα" title="Ραβδόγραμμα">
+  </div>
+</div>  
+<div id="help"><div class="dialog">Επίλεξε και συμπλήρωσε τον καιρό στο αντίστοιχο κελί για την κάθε ημέρα.<br/> Στη συνέχεια παρατήρησε το ραβδόγραμμα στο φύλλο δεξιά στην οθόνη σου και προσπάθησε να κάνεις υποθέσεις για τον καιρό της επόμενης εβδομάδας.</div>
+<audio id="audiohelp"><source src="resource/help.mp3" type="audio/mp3"></audio>
+</body>
+</html>
