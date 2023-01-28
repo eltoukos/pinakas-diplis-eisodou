@@ -64,13 +64,18 @@ body {
   width: 3.9em;
   height: 3.5em;
   margin: 0.1em 0.1em 0.1em 0.1em;
-  float:left;
+  float: left;
 }
 
 .cell img{
   margin-top:0.5em;
+  margin-left:0.5em;
   width:80%;
   height:80%;
+  -webkit-animation: checkmark_animation;
+  animation-name: checkmark_animation;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 }
 #barchart{
   display:inline-block;
@@ -90,6 +95,16 @@ body {
 
 @keyframes menubar_animation {
   from { left: -30em; }
+}
+
+@-webkit-keyframes checkmark_animation {
+  from { clip-path: inset(0% 100% 0% 0%) }
+  to { clip-path: inset(0% 0% 0% 0%); }
+}
+
+@keyframes checkmark_animation {
+  from { clip-path: inset(0% 100% 0% 0%); }
+  to { clip-path: inset(0% 0% 0% 0%); }
 }
 
 #menubar {

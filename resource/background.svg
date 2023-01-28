@@ -26,8 +26,8 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="0.6397878"
-     inkscape:cx="383.72098"
-     inkscape:cy="534.55224"
+     inkscape:cx="95.344113"
+     inkscape:cy="536.11526"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -609,11 +609,13 @@
   <g
      transform="matrix(0,1,-0.95923422,0,1086.0061,-108.95)"
      id="g3504"
-     inkscape:label="g3504">
+     inkscape:label="g3504"
+     style="fill:#ffe6d5">
     <use
        xlink:href="#Symbol_5_0_Layer0_1_FILL"
        id="use3502"
-       inkscape:label="use3502" />
+       inkscape:label="use3502"
+       style="fill:#ffe6d5" />
   </g>
   <g
      transform="matrix(0,-1,0.89632334,0,788.95084,1037.55)"
@@ -1328,116 +1330,156 @@
     </g>
   </g>
   <g
-     transform="translate(217.8,466.05)"
-     id="g4148">
+     id="g1083"
+     style="fill:#661cfc;fill-opacity:1">
     <g
-       transform="matrix(1,0,0,0.99998474,0.2,0.25)"
-       id="g4090">
+       transform="translate(217.8,466.05)"
+       id="g4148"
+       style="fill:#661cfc;fill-opacity:1">
       <g
-         id="g4080">
-        <use
-           xlink:href="#Symbol_27_0_Layer2_0_FILL"
-           id="use4078" />
+         transform="matrix(1,0,0,0.99998474,0.2,0.25)"
+         id="g4090"
+         style="fill:#661cfc;fill-opacity:1">
+        <g
+           id="g4080"
+           style="fill:#661cfc;fill-opacity:1">
+          <use
+             xlink:href="#Symbol_27_0_Layer2_0_FILL"
+             id="use4078"
+             style="fill:#661cfc;fill-opacity:1" />
+        </g>
+        <g
+           id="g4084"
+           style="fill:#661cfc;fill-opacity:1">
+          <use
+             xlink:href="#Symbol_27_0_Layer1_0_FILL"
+             id="use4082"
+             style="fill:#661cfc;fill-opacity:1" />
+        </g>
+        <g
+           id="g4088"
+           style="fill:#661cfc;fill-opacity:1">
+          <use
+             xlink:href="#Symbol_27_0_Layer0_0_FILL"
+             id="use4086"
+             style="fill:#661cfc;fill-opacity:1" />
+        </g>
       </g>
       <g
-         id="g4084">
-        <use
-           xlink:href="#Symbol_27_0_Layer1_0_FILL"
-           id="use4082" />
+         transform="matrix(1,0,0,0.99998474,121.35,0.25)"
+         id="g4104"
+         style="fill:#661cfc;fill-opacity:1">
+        <g
+           id="g4094"
+           style="fill:#661cfc;fill-opacity:1">
+          <use
+             xlink:href="#Symbol_27_0_Layer2_0_FILL"
+             id="use4092"
+             style="fill:#661cfc;fill-opacity:1" />
+        </g>
+        <g
+           id="g4098"
+           style="fill:#661cfc;fill-opacity:1">
+          <use
+             xlink:href="#Symbol_27_0_Layer1_0_FILL"
+             id="use4096"
+             style="fill:#661cfc;fill-opacity:1" />
+        </g>
+        <g
+           id="g4102"
+           style="fill:#661cfc;fill-opacity:1">
+          <use
+             xlink:href="#Symbol_27_0_Layer0_0_FILL"
+             id="use4100"
+             style="fill:#661cfc;fill-opacity:1" />
+        </g>
       </g>
       <g
-         id="g4088">
-        <use
-           xlink:href="#Symbol_27_0_Layer0_0_FILL"
-           id="use4086" />
-      </g>
-    </g>
-    <g
-       transform="matrix(1,0,0,0.99998474,121.35,0.25)"
-       id="g4104">
-      <g
-         id="g4094">
-        <use
-           xlink:href="#Symbol_27_0_Layer2_0_FILL"
-           id="use4092" />
-      </g>
-      <g
-         id="g4098">
-        <use
-           xlink:href="#Symbol_27_0_Layer1_0_FILL"
-           id="use4096" />
-      </g>
-      <g
-         id="g4102">
-        <use
-           xlink:href="#Symbol_27_0_Layer0_0_FILL"
-           id="use4100" />
-      </g>
-    </g>
-    <g
-       transform="matrix(1,0,0,0.99998474,242.5,0.25)"
-       id="g4118">
-      <g
-         id="g4108">
-        <use
-           xlink:href="#Symbol_27_0_Layer2_0_FILL"
-           id="use4106" />
+         transform="matrix(1,0,0,0.99998474,242.5,0.25)"
+         id="g4118"
+         style="fill:#661cfc;fill-opacity:1">
+        <g
+           id="g4108"
+           style="fill:#661cfc;fill-opacity:1">
+          <use
+             xlink:href="#Symbol_27_0_Layer2_0_FILL"
+             id="use4106"
+             style="fill:#661cfc;fill-opacity:1" />
+        </g>
+        <g
+           id="g4112"
+           style="fill:#661cfc;fill-opacity:1">
+          <use
+             xlink:href="#Symbol_27_0_Layer1_0_FILL"
+             id="use4110"
+             style="fill:#661cfc;fill-opacity:1" />
+        </g>
+        <g
+           id="g4116"
+           style="fill:#661cfc;fill-opacity:1">
+          <use
+             xlink:href="#Symbol_27_0_Layer0_0_FILL"
+             id="use4114"
+             style="fill:#661cfc;fill-opacity:1" />
+        </g>
       </g>
       <g
-         id="g4112">
-        <use
-           xlink:href="#Symbol_27_0_Layer1_0_FILL"
-           id="use4110" />
+         transform="matrix(1,0,0,0.99998474,363.65,0.25)"
+         id="g4132"
+         style="fill:#661cfc;fill-opacity:1">
+        <g
+           id="g4122"
+           style="fill:#661cfc;fill-opacity:1">
+          <use
+             xlink:href="#Symbol_27_0_Layer2_0_FILL"
+             id="use4120"
+             style="fill:#661cfc;fill-opacity:1" />
+        </g>
+        <g
+           id="g4126"
+           style="fill:#661cfc;fill-opacity:1">
+          <use
+             xlink:href="#Symbol_27_0_Layer1_0_FILL"
+             id="use4124"
+             style="fill:#661cfc;fill-opacity:1" />
+        </g>
+        <g
+           id="g4130"
+           style="fill:#661cfc;fill-opacity:1">
+          <use
+             xlink:href="#Symbol_27_0_Layer0_0_FILL"
+             id="use4128"
+             style="fill:#661cfc;fill-opacity:1" />
+        </g>
       </g>
       <g
-         id="g4116">
-        <use
-           xlink:href="#Symbol_27_0_Layer0_0_FILL"
-           id="use4114" />
-      </g>
-    </g>
-    <g
-       transform="matrix(1,0,0,0.99998474,363.65,0.25)"
-       id="g4132">
-      <g
-         id="g4122">
-        <use
-           xlink:href="#Symbol_27_0_Layer2_0_FILL"
-           id="use4120" />
-      </g>
-      <g
-         id="g4126">
-        <use
-           xlink:href="#Symbol_27_0_Layer1_0_FILL"
-           id="use4124" />
-      </g>
-      <g
-         id="g4130">
-        <use
-           xlink:href="#Symbol_27_0_Layer0_0_FILL"
-           id="use4128" />
-      </g>
-    </g>
-    <g
-       transform="matrix(1,0,0,0.99998474,484.85,0.25)"
-       id="g4146">
-      <g
-         id="g4136">
-        <use
-           xlink:href="#Symbol_27_0_Layer2_0_FILL"
-           id="use4134" />
-      </g>
-      <g
-         id="g4140">
-        <use
-           xlink:href="#Symbol_27_0_Layer1_0_FILL"
-           id="use4138" />
-      </g>
-      <g
-         id="g4144">
-        <use
-           xlink:href="#Symbol_27_0_Layer0_0_FILL"
-           id="use4142" />
+         transform="matrix(1,0,0,0.99998474,484.85,0.25)"
+         id="g4146"
+         style="fill:#661cfc;fill-opacity:1">
+        <g
+           id="g4136"
+           style="fill:#661cfc;fill-opacity:1">
+          <use
+             xlink:href="#Symbol_27_0_Layer2_0_FILL"
+             id="use4134"
+             style="fill:#661cfc;fill-opacity:1" />
+        </g>
+        <g
+           id="g4140"
+           style="fill:#661cfc;fill-opacity:1">
+          <use
+             xlink:href="#Symbol_27_0_Layer1_0_FILL"
+             id="use4138"
+             style="fill:#661cfc;fill-opacity:1" />
+        </g>
+        <g
+           id="g4144"
+           style="fill:#661cfc;fill-opacity:1">
+          <use
+             xlink:href="#Symbol_27_0_Layer0_0_FILL"
+             id="use4142"
+             style="fill:#661cfc;fill-opacity:1" />
+        </g>
       </g>
     </g>
   </g>
@@ -3319,4 +3361,180 @@
        style="fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.1"
        id="path3302" />
   </g>
+  <path
+     style="fill:#661cfc;fill-opacity:1;stroke-width:1.54583"
+     d="m 342.30099,518.14055 v -48.45357 h 56.26866 56.26866 v 48.45357 48.45356 h -56.26866 -56.26866 z"
+     id="path1851" />
+  <path
+     style="fill:#661cfc;fill-opacity:1;stroke-width:1.54583"
+     d="m 462.6534,518.14055 v -48.45357 h 56.26866 56.26865 v 48.45357 48.45356 H 518.92206 462.6534 Z"
+     id="path1853" />
+  <path
+     style="fill:#c8b7b7;fill-opacity:1;stroke-width:1.54583"
+     d="m 462.6534,411.85531 v -48.45357 h 56.26866 56.26865 v 48.45357 48.45356 H 518.92206 462.6534 Z"
+     id="path1855" />
+  <path
+     style="fill:#c8b7b7;fill-opacity:1;stroke-width:1.54583"
+     d="m 342.30099,518.14055 v -48.45357 h 56.26866 56.26866 v 48.45357 48.45356 h -56.26866 -56.26866 z"
+     id="path1926" />
+  <path
+     style="fill:#c8b7b7;fill-opacity:1;stroke-width:1.54583"
+     d="m 462.6534,518.14055 v -48.45357 h 56.26866 56.26865 v 48.45357 48.45356 H 518.92206 462.6534 Z"
+     id="path1928" />
+  <path
+     style="fill:#c8b7b7;fill-opacity:1;stroke-width:1.54583"
+     d="m 462.6534,411.85531 v -48.45357 h 56.26866 56.26865 v 48.45357 48.45356 H 518.92206 462.6534 Z"
+     id="path1930" />
+  <path
+     style="fill:#c8b7b7;fill-opacity:1;stroke-width:1.54583"
+     d="m 342.30099,411.85531 v -48.45357 h 56.26866 56.26866 v 48.45357 48.45356 h -56.26866 -56.26866 z"
+     id="path1932" />
+  <path
+     style="fill:#ffe6d5;fill-opacity:1;stroke-width:1.54583"
+     d="m 462.6534,518.14055 v -48.45357 h 56.26866 56.26865 v 48.45357 48.45356 H 518.92206 462.6534 Z"
+     id="path2003" />
+  <path
+     style="fill:#e7cfbf;fill-opacity:1;stroke-width:1.54583"
+     d="m 462.6534,411.85531 v -48.45357 h 56.26866 56.26865 v 48.45357 48.45356 H 518.92206 462.6534 Z"
+     id="path2005" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 462.6534,518.14055 v -48.45357 h 56.26866 56.26865 v 48.45357 48.45356 H 518.92206 462.6534 Z"
+     id="path2145" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 462.6534,411.85531 v -48.45357 h 56.26866 56.26865 v 48.45357 48.45356 H 518.92206 462.6534 Z"
+     id="path2561" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="M 462.6534,305.57007 V 257.1165 h 56.26866 56.26865 v 48.45357 48.45356 H 518.92206 462.6534 Z"
+     id="path2563" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 462.6534,200.84784 v -48.45356 h 56.26866 56.26865 v 48.45356 48.45357 H 518.92206 462.6534 Z"
+     id="path2565" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 342.30099,200.84784 v -48.45356 h 56.26866 56.26866 v 48.45356 48.45357 h -56.26866 -56.26866 z"
+     id="path2567" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="M 342.30099,305.57007 V 257.1165 h 56.26866 56.26866 v 48.45357 48.45356 h -56.26866 -56.26866 z"
+     id="path2569" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="M 220.38557,305.57007 V 257.1165 h 56.26866 56.26865 v 48.45357 48.45356 h -56.26865 -56.26866 z"
+     id="path2571" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 220.38557,200.84784 v -48.45356 h 56.26866 56.26865 v 48.45356 48.45357 h -56.26865 -56.26866 z"
+     id="path2573" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 220.38557,411.85531 v -48.45357 h 56.26866 56.26865 v 48.45357 48.45356 h -56.26865 -56.26866 z"
+     id="path2575" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 342.30099,411.85531 v -48.45357 h 56.26866 56.26866 v 48.45357 48.45356 h -56.26866 -56.26866 z"
+     id="path2577" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 342.30099,518.14055 v -48.45357 h 56.26866 56.26866 v 48.45357 48.45356 h -56.26866 -56.26866 z"
+     id="path2579" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 220.38557,518.14055 v -48.45357 h 56.26866 56.26865 v 48.45357 48.45356 h -56.26865 -56.26866 z"
+     id="path2581" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="M 220.38557,622.86277 V 574.4092 h 56.26866 56.26865 v 48.45357 48.45356 h -56.26865 -56.26866 z"
+     id="path2583" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="M 342.30099,622.86277 V 574.4092 h 56.26866 56.26866 v 48.45357 48.45356 h -56.26866 -56.26866 z"
+     id="path2585" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="M 462.6534,622.86277 V 574.4092 h 56.26866 56.26865 v 48.45357 48.45356 H 518.92206 462.6534 Z"
+     id="path2587" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="M 584.56882,622.86277 V 574.4092 h 56.26866 56.26865 v 48.45357 48.45356 h -56.26865 -56.26866 z"
+     id="path2589" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 584.56882,518.14055 v -48.45357 h 56.26866 56.26865 v 48.45357 48.45356 h -56.26865 -56.26866 z"
+     id="path2591" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 584.56882,411.85531 v -48.45357 h 56.26866 56.26865 v 48.45357 48.45356 h -56.26865 -56.26866 z"
+     id="path2593" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="M 584.56882,305.57007 V 257.1165 h 56.26866 56.26865 v 48.45357 48.45356 h -56.26865 -56.26866 z"
+     id="path2595" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 584.56882,200.84784 v -48.45356 h 56.26866 56.26865 v 48.45356 48.45357 h -56.26865 -56.26866 z"
+     id="path2597" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 704.92123,200.84784 v -48.45356 h 56.26865 56.26866 v 4.85418 c 0,2.89741 -1.57517,6.72615 -3.90755,9.49803 -4.92305,5.85071 -4.92305,9.20937 0,15.06009 3.8845,4.61646 3.90755,4.82919 3.90755,36.06934 v 31.42549 h -56.26866 -56.26865 z"
+     id="path2599" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="M 704.92123,305.57007 V 257.1165 h 56.26865 56.26866 v 48.45357 48.45356 h -56.26866 -56.26865 z"
+     id="path2601" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 704.92123,411.85531 v -48.45357 h 56.26865 56.26866 v 48.45357 48.45356 h -56.26866 -56.26865 z"
+     id="path2603" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 704.92123,518.14055 v -48.45357 h 56.26865 56.26866 v 48.45357 48.45356 h -56.26866 -56.26865 z"
+     id="path2605" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="M 704.92123,622.86277 V 574.4092 h 56.26865 56.26866 v 48.45357 48.45356 h -56.26866 -56.26865 z"
+     id="path2607" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 584.56882,729.14801 v -48.45357 h 56.26866 56.26865 v 48.45357 48.45356 h -56.26865 -56.26866 z"
+     id="path2609" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 704.92123,729.14801 v -48.45357 h 56.26865 56.26866 v 48.45357 48.45356 h -56.26866 -56.26865 z"
+     id="path2611" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 704.92123,834.65174 v -49.23508 h 56.26865 56.26866 v 49.23508 49.23507 h -56.26866 -56.26865 z"
+     id="path2613" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 584.56882,834.65174 v -49.23508 h 56.26866 56.26865 v 49.23508 49.23507 h -56.26865 -56.26866 z"
+     id="path2615" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 462.6534,834.65174 v -49.23508 h 56.26866 56.26865 v 49.23508 49.23507 H 518.92206 462.6534 Z"
+     id="path2617" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 462.6534,729.14801 v -48.45357 h 56.26866 56.26865 v 48.45357 48.45356 H 518.92206 462.6534 Z"
+     id="path2619" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 342.30099,729.14801 v -48.45357 h 56.26866 56.26866 v 48.45357 48.45356 h -56.26866 -56.26866 z"
+     id="path2621" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 342.30099,834.65174 v -49.23508 h 56.26866 56.26866 v 49.23508 49.23507 h -56.26866 -56.26866 z"
+     id="path2623" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 220.38557,834.65174 v -49.23508 h 56.26866 56.26865 v 49.23508 49.23507 h -56.26865 -56.26866 z"
+     id="path2625" />
+  <path
+     style="fill:#d3c6a6;fill-opacity:1;stroke-width:1.54583"
+     d="m 220.38557,729.14801 v -48.45357 h 56.26866 56.26865 v 48.45357 48.45356 h -56.26865 -56.26866 z"
+     id="path2627" />
 </svg>
