@@ -1,0 +1,12 @@
+Copyright: 2023 Myrto Georgopoulou
+License: CC BY-NC-SA 4.0
+Files:
+background.svg
+bar_about.svg
+bar_fullscreen.svg
+bar_home.svg
+bar_next.svg
+bar_previous.svg
+checkmark.svg
+bar_reset.svg
+bar_graph.svg
