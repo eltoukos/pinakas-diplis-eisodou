@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2018 Alkis Georgopoulos <alkisg@gmail.com>.
+Copyright (C) 2023 Myrto Georgopoulou <myrto.georgopoulou@gmail.com>.
 SPDX-License-Identifier: CC-BY-SA-4.0
 */
 * {
@@ -13,25 +13,30 @@ SPDX-License-Identifier: CC-BY-SA-4.0
   overflow: hidden;
 }
 
-html, body {  /* flexbox needs this to center the main div */
+html,
+body {
+  /* flexbox needs this to center the main div */
   width: 100%;
   height: 100%;
 }
 
 body {
-  background-color: rgb(0,0,0);
-  color: rgb(255,255,255);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 10px;
   margin: 0;
   display: flex;
-  align-items: center;  /* vertically center main div */
-  justify-content: center;  /* horizontally center main div */
-  overflow: hidden;  /* avoid scrollbars when dragging outside */
+  align-items: center;
+  /* vertically center main div */
+  justify-content: center;
+  /* horizontally center main div */
+  overflow: hidden;
+  /* avoid scrollbars when dragging outside */
 }
 
 #main {
   /* SVG backgrounds need preserveAspectRatio="none" in many browsers. */
-  background: rgb(245,214,86) url('resource/background.svg');
+  background: rgb(245, 214, 86) url('resource/background.svg');
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
@@ -40,82 +45,112 @@ body {
   width: 64em;
   text-align: center;
   overflow: hidden;
-  padding-top: 1.5em;  /* workaround to avoid space-evenly */
-  padding-bottom: 7em;  /* space for the menubar */
+  padding-top: 1.5em;
+  /* workaround to avoid space-evenly */
+  padding-bottom: 7em;
+  /* space for the menubar */
   display: block;
   align-content: space-around;
   justify-content: space-around;
   align-items: center;
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
 }
 
-#inputTable{
-  display:inline-block;
-  float:left;
+#inputTable {
+  display: inline-block;
+  float: left;
   overflow: auto;
-  margin-left: 7.2em;
+  margin-left: 8.8em;
   margin-top: 3.4em;
   width: 22em;
 }
 
-.cell{
-  display:inline-block;
+.cell {
+  display: inline-block;
   width: 3.9em;
   height: 3.5em;
   margin: 0.1em 0.1em 0.1em 0.1em;
   float: left;
 }
 
-.cell img{
-  margin-top:0.5em;
-  margin-left:0.5em;
-  width:80%;
-  height:80%;
+.cell img {
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  width: 80%;
+  height: 80%;
   -webkit-animation: checkmark_animation;
   animation-name: checkmark_animation;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
-#barchart{
-  display:inline-block;
-  margin-top:3.7em;
-  margin-left:2em;
-  height: 22em;
-  width:21em;
+
+#barchart {
+  display: inline-block;
+  margin-top: 3em;
+  margin-left: 3.8em;
+  height: 23em;
+  width: 24em;
 }
-#bc{
-  float:left;
-  height: 22em;
-  width:21em;
+
+#div_pie {
+  height: 11em;
+  -background-color: yellow;
+  padding-bottom: 1em;
 }
+
+#pie {
+  display: block;
+  margin: 0 auto;
+}
+
+#div_bar {
+  height: 11em;
+  margin-left: 1em;
+  -background-color: lime;
+}
+
 @-webkit-keyframes menubar_animation {
-  from { left: -30em; }
+  from {
+    left: -30em;
+  }
 }
 
 @keyframes menubar_animation {
-  from { left: -30em; }
+  from {
+    left: -30em;
+  }
 }
 
 @-webkit-keyframes checkmark_animation {
-  from { clip-path: inset(0% 100% 0% 0%) }
-  to { clip-path: inset(0% 0% 0% 0%); }
+  from {
+    clip-path: inset(0% 100% 0% 0%)
+  }
+
+  to {
+    clip-path: inset(0% 0% 0% 0%);
+  }
 }
 
 @keyframes checkmark_animation {
-  from { clip-path: inset(0% 100% 0% 0%); }
-  to { clip-path: inset(0% 0% 0% 0%); }
+  from {
+    clip-path: inset(0% 100% 0% 0%);
+  }
+
+  to {
+    clip-path: inset(0% 0% 0% 0%);
+  }
 }
 
 #menubar {
   display: flex;
   align-items: center;
-  background-color: rgba(127,127,127,0.5);
+  background-color: rgba(127, 127, 127, 0.5);
   position: absolute;
   left: 0em;
   bottom: 0.1em;
   padding: 0 0.5em 0 0.5em;
-  border: 0.1em solid rgba(255,255,255,0.5);
+  border: 0.1em solid rgba(255, 255, 255, 0.5);
   border-radius: 0 1em 1em 0;
   -webkit-animation: menubar_animation;
   animation-name: menubar_animation;
@@ -149,27 +184,28 @@ body {
 }
 
 #help {
-  display: none; /* javascript toggles that to flex */
+  display: none;
+  /* javascript toggles that to flex */
   align-items: center;
   justify-content: center;
   position: fixed;
-  background-color: rgba(63,63,63,0.5);
+  background-color: rgba(63, 63, 63, 0.5);
   width: 100%;
   height: 100%;
-  top: 0;  /* IE and old webview ignore "fixed" for flex childs */
+  top: 0;
+  /* IE and old webview ignore "fixed" for flex childs */
   left: 0;
 }
 
 #help .dialog {
   text-align: center;
   width: 19em;
-  background-color: rgb(255,255,255);
-  color: rgb(0,0,0);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 1em;
-  border: 0.2em solid rgb(80,80,80);
+  border: 0.2em solid rgb(80, 80, 80);
   border-radius: 0.5em;
-  -webkit-filter: drop-shadow(0.5em 0.5em 0.5em rgb(80,80,80));
-  filter: drop-shadow(0.5em 0.5em 0.5em rgb(80,80,80));
+  -webkit-filter: drop-shadow(0.5em 0.5em 0.5em rgb(80, 80, 80));
+  filter: drop-shadow(0.5em 0.5em 0.5em rgb(80, 80, 80));
   font-size: 2em;
 }
-

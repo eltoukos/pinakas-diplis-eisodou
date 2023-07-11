@@ -1,12 +1,13 @@
 /*
-Copyright (C) 2018 Alkis Georgopoulos <alkisg@gmail.com>.
-SPDX-License-Identifier: CC-BY-SA-4.0*/
+Copyright (C) 2023 Myrto Georgopoulou <myrto.georgopoulou@gmail.com>.
+SPDX-License-Identifier: CC-BY-SA-4.0
+*/
 
 var act = null;
 function onError(message, source, lineno, colno, error) {
   alert(sformat('Σφάλμα προγραμματιστή!\n'
     + 'message: {}\nsource: {}\nlineno: {}\ncolno: {}\nerror: {}',
-  message, source, lineno, colno, error));
+    message, source, lineno, colno, error));
 }
 
 // ES6 string templates don't work in old Android WebView
@@ -70,17 +71,16 @@ function onHome(event) {
 
 function onHelp(event) {
   ge('help').style.display = 'flex';
-  ge('audiohelp').currentTime = 0;
-  ge('audiohelp').play();
+  ge('helpaudio').play();
 }
 
 function onHelpHide(event) {
-  ge('help').style.display = '';
-  ge('audiohelp').pause();
-}
-
-function onAbout(event) {
-  window.open('credits/index_DS_II.html');
+  if (['help'].includes(event.srcElement.id)
+    && ge('help').style.display == 'flex') {
+    ge('help').style.display = 'none';
+    ge('helpaudio').pause();
+    ge('helpaudio').currentTime = 0;
+  }
 }
 
 function onFullScreen(event) {
@@ -99,103 +99,175 @@ function onFullScreen(event) {
   }
 }
 
-function reset(event) {
-    svg = ge('bc');
-    while (svg.lastChild) {
-      svg.removeChild(svg.lastChild);
+function onReset(event) {
+  for (var i = 0; i < 7; i++) {
+    for (var j = 0; j < 5; j++) {
+      act.cells[i][j].innerHTML = "";
+      act.weather[i][j] = 0;
     }
-    for (var i=0; i<7; i++){
-      for (var j=0; j<5; j++){
-        act.cells[i][j].innerHTML = "";
-        act.weather[i][j] = 0;
-      }
-    }
+  }
 }
 
 
-function drawBC(){
-  var colors = ['#707dab','#6D9367','#ff713f','#27c6d9','#f06290'];
-  var svg = ge('bc');
-  while (svg.lastChild) {
-    svg.removeChild(svg.lastChild);
-  }
-  var svgns = "http://www.w3.org/2000/svg";
+function onGraph() {
+  daysOfWeather = [];
   for (var j = 0; j < 5; j++) {
-      var daysOfWeather = 0;
-      for (i = 0; i < 7; i++){
-        daysOfWeather += act.weather[i][j];
-        var rect = document.createElementNS(svgns, 'rect');
-        rect.setAttributeNS(null, 'x', sformat('{}em',0.1 + j*4 + 0.15*j));
-        rect.setAttributeNS(null, 'y', sformat('{}em',22-(daysOfWeather/7)*22));
-        rect.setAttributeNS(null, 'height', sformat('{}em',22/7));
-        rect.setAttributeNS(null, 'width', sformat('4em'));
-        rect.setAttributeNS(null, 'fill', colors[j]);
-        rect.setAttributeNS(null, 'stroke', '#aaaaaa');
-        rect.setAttributeNS(null, 'stroke-width', '0.1em')
-        svg.appendChild(rect);
+    daysOfWeather.push(0);
+    for (i = 0; i < 7; i++) {
+      daysOfWeather[j] += act.weather[i][j];
+    }
+  }
+
+  if (act.pie) {
+    act.pie.data.datasets.forEach((dataset) => {
+      dataset.data = daysOfWeather;
+    });
+    act.pie.update();
+  } else {
+    act.pie = new Chart(ge('pie'), {
+      type: 'pie',
+      data: {
+        labels: ['Ήλιος', 'Συννεφιά', 'Βροχή', 'Καταιγίδα', 'Χιόνι'],
+        datasets: [{
+          label: 'καιρός',
+          data: daysOfWeather,
+          backgroundColor: [
+            'rgba(242, 192, 65)',
+            'rgba(158, 222, 219)',
+            'rgba(11, 111, 174)',
+            'rgba(38, 53, 139)',
+            'rgba(208, 186, 179)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        layout: {
+          padding: 0
+        },
+        scales: {
+          y: {
+            display: false
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            position: 'left',
+            align: 'start',
+            display: false
+          }
+        }
       }
+    })
+  };
+
+  if (act.bar) {
+    act.bar.data.datasets.forEach((dataset) => {
+      dataset.data = daysOfWeather;
+    });
+    act.bar.update();
+  } else {
+    act.bar = new Chart(ge('bar'), {
+      type: 'bar',
+      data: {
+        labels: ['Ήλιος', 'Συννεφιά', 'Βροχή', 'Καταιγίδα', 'Χιόνι'],
+        datasets: [{
+          label: 'καιρός',
+          data: daysOfWeather,
+          backgroundColor: [
+            'rgba(242, 192, 65)',
+            'rgba(158, 222, 219)',
+            'rgba(11, 111, 174)',
+            'rgba(38, 53, 139)',
+            'rgba(208, 186, 179)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          },
+          x: {
+            display: false
+          },
+
+        },
+        plugins: {
+          legend: {
+            display: false
+          }
+        }
+      }
+    });
   }
 }
 
-function cellIndex(obj,isImage){
-  if (isImage){
+function cellIndex(obj, isImage) {
+  if (isImage) {
     rowString = obj.id[2];
     row = parseInt(rowString);
     colString = obj.id[3];
     col = parseInt(colString);
-    return([row,col]);
+    return ([row, col]);
   }
-  else{
+  else {
     rowString = obj.id[1];
     row = parseInt(rowString);
     colString = obj.id[2];
     col = parseInt(colString);
-    return([row,col]);
+    return ([row, col]);
   }
 }
 
-function cellClick(event){
+function cellClick(event) {
   var cellij;
-  if (event.target.tagName.toUpperCase() == 'IMG'){
-    cellij = cellIndex(event.target,true);
+  if (event.target.tagName.toUpperCase() == 'IMG') {
+    cellij = cellIndex(event.target, true);
   }
-  else{
-    cellij = cellIndex(event.target,false);
+  else {
+    cellij = cellIndex(event.target, false);
   }
 
   var i = cellij[0];
   var j = cellij[1];
-  if (act.weather[i][j] == 1){
+  if (act.weather[i][j] == 1) {
     act.cells[i][j].innerHTML = "";
     act.weather[i][j] = 0;
   }
-  else{//remember to erase the other 1 if it's there
-    for (var k=0; k<5; k++){
-      if ((act.weather[i][k] == 1) && k!=j){
+  else {//remember to erase the other 1 if it's there
+    for (var k = 0; k < 5; k++) {
+      if ((act.weather[i][k] == 1) && k != j) {
         act.weather[i][k] = 0;
         act.cells[i][k].innerHTML = "";
       }
     }
-    act.cells[i][j].innerHTML = sformat("<img id='im{}{}' src='resource/checkmark.svg'/>",i,j);
+    act.cells[i][j].innerHTML = sformat("<img id='im{}{}' src='resource/checkmark.svg'/>", i, j);
     act.weather[i][j] = 1;
   }
 }
 function init() {
-  var i,j;
+  var i, j;
   act = {
-    weather: [[0,0,0,0,0],
-              [0,0,0,0,0],
-              [0,0,0,0,0],
-              [0,0,0,0,0],
-              [0,0,0,0,0],
-              [0,0,0,0,0],
-              [0,0,0,0,0]],
-    cells: []
+    weather: [[0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0]],
+    cells: [],
+    pie: null,
+    bar: null,
   }
-  for (i=0; i<7; i++){
+  for (i = 0; i < 7; i++) {
     act.cells.push([])
-    for (j=0; j<5; j++){      
-      act.cells[i].push(ge(sformat('i{}{}',i,j)));
+    for (j = 0; j < 5; j++) {
+      act.cells[i].push(ge(sformat('i{}{}', i, j)));
       act.cells[i][j].onclick = cellClick;
       act.cells[i][j].innerHTML = "";
     }
@@ -210,10 +282,9 @@ function init() {
   ge('bar_home').onclick = onHome;
   ge('bar_help').onclick = onHelp;
   ge('help').onclick = onHelpHide;
-  ge('bar_about').onclick = onAbout;
   ge('bar_fullscreen').onclick = onFullScreen;
-  ge('bar_reset').onclick = reset;
-  ge('bar_graph').onclick = drawBC;
+  ge('bar_reset').onclick = onReset;
+  ge('bar_graph').onclick = onGraph;
   for (i = 0; i < document.images.length; i += 1) {
     document.images[i].ondragstart = doPreventDefault;
   }
